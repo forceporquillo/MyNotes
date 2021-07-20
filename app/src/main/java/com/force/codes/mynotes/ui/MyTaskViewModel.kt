@@ -85,8 +85,8 @@ class MyTaskViewModel : BaseTaskViewModel() {
         return task
     }
 
-    // invokes whenever the adapter detects that
-    // the task index being of dragged  is modified.
+    // invokes whenever the adapter detects
+    // drag position or data set changes.
     fun dispatchedToCache() {
         for (dataSet in modifiedDataSet) {
             if (dataSet.isNotEmpty() && isModified) {
