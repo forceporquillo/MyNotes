@@ -1,6 +1,5 @@
 package com.force.codes.mynotes.ui
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.force.codes.mynotes.core.util.DateTimeParser
@@ -133,23 +132,21 @@ class MyTaskViewModel : BaseTaskViewModel() {
         viewModelScope.launch {
             val activeTaskJob = launch {
                 taskRepository.getActiveTask(date ?: selectedDay).collect {
-                    Log.e(null, "${it.size}")
                     if (it.isNullOrEmpty().also { e -> setEmpty(ACTIVE_TASK, e) }) {
                         mUiActiveTask.value = TaskUiState.Empty
-                    } else {
-                        mUiActiveTask.value = TaskUiState.Success(it)
+                        return@collect
                     }
+                    mUiActiveTask.value = TaskUiState.Success(it)
                 }
             }
 
             val completeTaskJob = launch {
                 taskRepository.getCompleteTask(date ?: selectedDay).collect {
-                    if (it.isEmpty()) {
+                    if (it.isNullOrEmpty().also { e -> setEmpty(COMPLETED_TASK, e) }) {
                         uiCompletedTask.value = TaskUiState.Empty
-                    } else {
-                        uiCompletedTask.value = TaskUiState.Success(it)
+                        return@collect
                     }
-                    setEmpty(COMPLETED_TASK, it.isEmpty())
+                    uiCompletedTask.value = TaskUiState.Success(it)
                 }
             }
 
