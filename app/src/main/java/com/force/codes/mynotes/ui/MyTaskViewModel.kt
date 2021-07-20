@@ -30,7 +30,7 @@ class MyTaskViewModel : BaseTaskViewModel() {
     var task: Task? = null
         private set
 
-    var selectedDay: String = DateTimeParser.getTodayDate()
+    var selectedDate: String = DateTimeParser.getTodayDate()
 
     private var modifiedDataSet = Array<List<Task>>(2) { emptyList() }
     private var isModified = false
@@ -80,7 +80,7 @@ class MyTaskViewModel : BaseTaskViewModel() {
             // also notify UI with the update
             setTaskUiState(uiUpdatedEventState)
         }
-        task.today = this.selectedDay
+        task.today = this.selectedDate
         return task
     }
 
@@ -129,9 +129,10 @@ class MyTaskViewModel : BaseTaskViewModel() {
     }
 
     fun queryAllTask(date: String? = null) {
+        val selectedDate = date ?: selectedDate
         viewModelScope.launch {
             val activeTaskJob = launch {
-                taskRepository.getActiveTask(date ?: selectedDay).collect {
+                taskRepository.getActiveTask(date = selectedDate).collect {
                     if (it.isNullOrEmpty().also { e -> setEmpty(ACTIVE_TASK, e) }) {
                         mUiActiveTask.value = TaskUiState.Empty
                         return@collect
@@ -140,8 +141,8 @@ class MyTaskViewModel : BaseTaskViewModel() {
                 }
             }
 
-            val completeTaskJob = launch {
-                taskRepository.getCompleteTask(date ?: selectedDay).collect {
+            val completedTaskJob = launch {
+                taskRepository.getCompleteTask(date = selectedDate).collect {
                     if (it.isNullOrEmpty().also { e -> setEmpty(COMPLETED_TASK, e) }) {
                         uiCompletedTask.value = TaskUiState.Empty
                         return@collect
@@ -150,8 +151,8 @@ class MyTaskViewModel : BaseTaskViewModel() {
                 }
             }
 
-            // parallel work
-            joinAll(activeTaskJob, completeTaskJob)
+            // parallel concurrent work
+            joinAll(activeTaskJob, completedTaskJob)
         }
     }
 

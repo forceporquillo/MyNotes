@@ -104,7 +104,7 @@ class CreateTaskFragment : BaseTaskFragment<FragmentCreateTaskBinding>(),
     override fun onDaySelect(selectedDay: Day?) {
         super.onDaySelect(selectedDay)
         val theSelectedDay = DateTimeParser.parseDay(selectedDay!!)
-        viewModel.selectedDay = theSelectedDay
+        viewModel.selectedDate = theSelectedDay
     }
 
     override fun onAddTask() {
