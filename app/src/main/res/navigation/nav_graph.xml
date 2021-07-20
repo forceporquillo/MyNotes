@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.force.codes.mynotes.ui.MainActivity$SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+
+        <action
+            android:id="@+id/action_splashScreenFragment_to_fragmentMyNotes"
+            app:destination="@id/fragmentMyNotes"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentMyNotes"
+        android:name="com.force.codes.mynotes.ui.MyTaskFragment"
+        android:label="fragment_my_notes"
+        tools:layout="@layout/fragment_my_notes">
+
+        <action
+            android:id="@+id/createTaskFragmentAction"
+            app:destination="@id/createTaskFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createTaskFragment"
+        android:name="com.force.codes.mynotes.ui.CreateTaskFragment"
+        android:label="CreateTaskFragment" >
+
+    </fragment>
+
+</navigation>

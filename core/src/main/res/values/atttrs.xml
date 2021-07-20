@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DragDropSwipeRecyclerView">
+        <attr name="item_layout" format="reference" />
+        <attr name="divider" format="reference" />
+        <attr name="behind_swiped_item_icon" format="reference" />
+        <attr name="behind_swiped_item_icon_secondary" format="reference" />
+        <attr name="behind_swiped_item_icon_margin" format="dimension" />
+        <attr name="behind_swiped_item_icon_centered" format="boolean" />
+        <attr name="behind_swiped_item_bg_color" format="color" />
+        <attr name="behind_swiped_item_bg_color_secondary" format="color" />
+        <attr name="behind_swiped_item_custom_layout" format="reference" />
+        <attr name="behind_swiped_item_custom_layout_secondary" format="reference" />
+        <attr name="swiped_item_opacity_fades_on_swiping" format="boolean" />
+        <attr name="long_press_to_start_dragging" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandIconView">
+        <attr name="eiv_roundedCorners" format="boolean"/>
+        <attr name="eiv_switchColor" format="boolean"/>
+        <attr name="eiv_color" format="color"/>
+        <attr name="eiv_colorMore" format="color"/>
+        <attr name="eiv_colorLess" format="color"/>
+        <attr name="eiv_colorIntermediate" format="color"/>
+        <attr name="eiv_animationDuration" format="integer"/>
+        <attr name="eiv_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="UICalendar">
+
+        <attr name="showWeek" format="boolean" />
+        <attr name="hideArrows" format="boolean" value="true"/>
+        <attr name="datePattern" format="string" value="MMMM"/>
+
+        <attr name="firstDayOfWeek" format="enum">
+            <enum name="sunday" value="0" />
+            <enum name="monday" value="1" />
+            <enum name="tuesday" value="2" />
+            <enum name="wednesday" value="3" />
+            <enum name="thursday" value="4" />
+            <enum name="friday" value="5" />
+            <enum name="saturday" value="6" />
+        </attr>
+
+        <attr name="state" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+        </attr>
+
+        <attr name="textColor" format="color" />
+        <attr name="primaryColor" format="color" />
+
+        <attr name="eventColor" format="color" />
+
+
+        <attr name="todayItem_textColor" format="color" />
+        <attr name="todayItem_background" format="integer" />
+
+        <attr name="selectedItem_textColor" format="color" />
+        <attr name="selectedItem_background" format="integer" />
+
+        <attr name="buttonLeft_drawable" format="integer" />
+        <attr name="buttonRight_drawable" format="integer" />
+
+        <attr name="buttonLeft_drawableTintColor" format="color" />
+        <attr name="buttonRight_drawableTintColor" format="color" />
+
+        <attr name="expandIconColor" format="color" />
+
+    </declare-styleable>
+
+
+</resources>

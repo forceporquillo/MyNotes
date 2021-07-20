@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/drawable/swipe_complete.xml" value="0.33421052631578946" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/drawable/swipe_delete.xml" value="0.33421052631578946" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/drawable/task_circle_solid_back_background.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/drawable/task_circle_solid_back_background_80.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/drawable/task_circle_solid_background.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/activity_main.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/calendar_view.xml" value="0.3206140350877193" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/fragment_create_task.xml" value="0.25" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/fragment_my_notes.xml" value="0.33" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/fragment_splash_screen.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/swipe_active.xml" value="0.3206140350877193" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/swipe_complete.xml" value="0.3206140350877193" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/swipe_delete_item.xml" value="0.3206140350877193" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/app/src/main/res/layout/task_item.xml" value="0.33" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/core/src/main/res/drawable/circle_black_solid_background.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/core/src/main/res/drawable/ic_down.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/fporq/Documents/TurboGiantsOpenSource/MyNotes/core/src/main/res/layout/day_layout.xml" value="0.35989583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

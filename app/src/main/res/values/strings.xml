@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Notes</string>>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_task">My Task</string>
+    <string name="active_task">Active Task</string>
+    <string name="completed_task">Completed Task</string>
+    <string name="deleted_task">Task is successfully deleted!</string>
+    <string name="added_task">Task is successfully added!</string>
+    <string name="task_updated">Task is successfully updated!</string>
+    <string name="task_completed">Task is successfully completed!!</string>
+    <string name="notes">Notes</string>
+    <string name="add_note">Add note</string>
+    <string name="time">Time</string>
+    <string name="alarm">Alarm</string>
+    <string name="add_your_task">Add your task</string>
+    <string name="update_your_task">Update your task</string>
+    <string name="new_task">New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="what_do_you_need_to_do">What do you need to do?</string>
+    <string name="task_is_empty">Task is empty!</string>
+    <string name="loading">Loading...</string>
+    <string name="delete">DELETE</string>
+    <string name="complete">COMPLETE</string>
+    <string name="active">ACTIVE</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.force.codes.mynotes.core.widget.calendar.CollapsibleCalendar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:buttonLeft_drawable="@drawable/ic_down"
+    app:buttonLeft_drawableTintColor="@color/black"
+    app:buttonRight_drawableTintColor="@color/black"
+    app:expandIconColor="@color/black"
+    app:hideArrows="false"
+    app:selectedItem_background="@drawable/task_circle_solid_background"
+    app:selectedItem_textColor="@color/white"
+    app:textColor="@color/black"
+    app:todayItem_background="@drawable/task_circle_solid_back_background"
+    app:todayItem_textColor="@color/white">
+
+</com.force.codes.mynotes.core.widget.calendar.CollapsibleCalendar>
